@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "189348239233",
+    "firebase_url": "https://parentconnect-2754d-default-rtdb.firebaseio.com",
+    "project_id": "parentconnect-2754d",
+    "storage_bucket": "parentconnect-2754d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189348239233:android:39f23d3393fe1091833a80",
+        "android_client_info": {
+          "package_name": "com.example.parent_connect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0NjhC-YvEt4nh4AhuYYLbddfu3KaKc3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

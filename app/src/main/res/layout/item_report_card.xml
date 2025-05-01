@@ -1,0 +1,83 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardElevation="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="8dp"
+    android:id="@+id/cardView">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp">
+
+
+        <!-- Horizontal LinearLayout for Text and ImageButton -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="start|center_vertical">
+
+            <!-- ImageButton to delete the PDF -->
+            <ImageButton
+                android:id="@+id/deleteReportButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_delete"
+                android:contentDescription="Delete PDF"
+                android:paddingEnd="10dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:layout_gravity="center_vertical" />
+
+            <!-- Vertical LinearLayout for Exam Name and Exam Date -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingEnd="8dp">
+
+                <!-- Exam Name -->
+                <TextView
+                    android:id="@+id/reportName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Exam Name"
+                    android:layout_marginEnd="8dp" />
+
+                <!-- Exam Date -->
+                <TextView
+                    android:id="@+id/reportDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Exam Date"
+                    android:layout_marginEnd="8dp" />
+
+            </LinearLayout>
+
+            <!-- ImageButton to view the PDF -->
+            <ImageButton
+                android:id="@+id/viewReportButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_arrow_forward_ios_24"
+                android:contentDescription="View PDF"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/purple_light"
+    android:fillViewport="true">
+
+    <!-- Button Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:paddingBottom="16dp">
+
+        <!-- Left Button -->
+        <Button
+            android:id="@+id/leftButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="School Events"
+            android:backgroundTint="@color/purple_500"
+            android:textSize="16sp"
+            android:layout_marginEnd="16dp"/>
+
+
+        <!-- Right Button -->
+        <Button
+            android:id="@+id/rightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Social Events"
+            android:backgroundTint="@color/teal_700"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- School Events Section (Initially Visible) -->
+    <LinearLayout
+        android:id="@+id/schoolEventsSection"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <!-- Title for School Events -->
+        <TextView
+            android:id="@+id/EventsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upcoming School Events"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:paddingBottom="8dp" />
+
+        <!-- RecyclerView for School Events -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerEvents"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingBottom="8dp" />
+    </LinearLayout>
+
+
+
+    <!-- Add Event Button (Visible only for SchoolAdmin role) -->
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/addEventButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/baseline_add_circle_outline_24"
+        android:contentDescription="Add Event"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="8dp"/>
+</LinearLayout>

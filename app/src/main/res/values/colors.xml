@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="teal_light">#80CBC4</color>
+    <color name="purple_light">#D1C4E9</color>
+
+    <color name="row_color_1">#F5F5F5</color> <!-- Light gray -->
+    <color name="row_color_2">#FFFFFF</color> <!-- White -->
+
+    <color name="color_current_user_message">#D1C4E9</color> <!-- Light Purple -->
+
+    <!-- Color for messages from other users -->
+    <color name="color_other_user_message">#E1F5FE</color><!-- Light Blue -->
+
+</resources>

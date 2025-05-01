@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <!-- HomeFragment -->
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.parent_connect.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+
+        <argument
+            android:name="USER_ROLE"
+            app:argType="string" />
+
+        <!-- Action to navigate to the NotificationsFragment -->
+        <action
+            android:id="@+id/action_home_to_notifications"
+            app:destination="@id/navigation_notifications" />
+
+        <!-- You can add more actions if needed -->
+        <action
+            android:id="@+id/action_home_to_wards"
+            app:destination="@id/navigation_wards" />
+
+        <!-- You can add more actions if needed -->
+        <action
+            android:id="@+id/action_home_to_messages"
+            app:destination="@id/navigation_messages" />
+
+    </fragment>
+
+    <!-- WardsFragment -->
+    <fragment
+        android:id="@+id/navigation_wards"
+        android:name="com.example.parent_connect.ui.wards.WardsFragment"
+        android:label="Wards"
+        tools:layout="@layout/fragment_wards" />
+
+    <!-- NotificationsFragment -->
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.parent_connect.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications">
+
+    <!-- Action to navigate to the NotificationsFragment -->
+    <action
+        android:id="@+id/action_notifications_to_home"
+        app:destination="@id/navigation_home" />
+
+    </fragment>
+
+    <!-- MessagesFragment -->
+    <fragment
+        android:id="@+id/navigation_messages"
+        android:name="com.example.parent_connect.ui.messages.MessagesFragment"
+        android:label="Messages"
+        tools:layout="@layout/fragment_messages" />
+
+</navigation>

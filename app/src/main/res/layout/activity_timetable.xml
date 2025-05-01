@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Spinner for selecting children -->
+    <Spinner
+        android:id="@+id/childrenDropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:spinnerMode="dropdown"
+        android:background="@android:drawable/btn_dropdown"/>
+
+    <!-- Timetable Title -->
+    <TextView
+        android:id="@+id/timetableTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timetable"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- ScrollView for Vertical Scrolling -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Horizontal ScrollView for Horizontal Scrolling -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- GridLayout to represent the timetable -->
+            <GridLayout
+                android:id="@+id/gridTimetable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="6"
+                android:orientation="horizontal"
+                android:rowCount="6"
+                android:layout_gravity="center">
+
+                <!-- Days of the week (Headers) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time/Day"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mon"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tue"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wed"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thu"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fri"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textStyle="bold"/>
+
+                <!-- Timetable rows (Time slots) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9:00-10:00"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/mon_9am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a"
+                    android:gravity="center"
+                    android:padding="8dp"
+
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/tue_9am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="b"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/wed_9am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="c"
+                    android:gravity="center"
+                    android:padding="8dp"
+
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/thu_9am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="d"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/fri_9am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="e"
+                    android:gravity="center"
+                    android:padding="8dp"
+
+                    android:textColor="@android:color/white"/>
+
+            </GridLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+</LinearLayout>

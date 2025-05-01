@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/imageViewWardProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ward_dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:padding="8dp"
+            android:background="@drawable/card_border"
+            android:contentDescription="Profile Image" />
+
+        <!-- Personal Information Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:elevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewPersonalInfoHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Information"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Full Name -->
+                    <TableRow
+                        android:background="@color/row_color_1"> <!-- Alternate color for row -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Full Name"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textViewFullName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="John Doe" />
+                    </TableRow>
+
+                    <!-- Roll Number -->
+                    <TableRow
+                        android:background="@color/row_color_2"> <!-- Alternate color for row -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Roll Number"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textViewRollNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="123" />
+                    </TableRow>
+
+                    <!-- Class/Grade -->
+                    <TableRow
+                        android:background="@color/row_color_1"> <!-- Alternate color for row -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Class/Grade"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textViewClassGrade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="10A" />
+                    </TableRow>
+
+                    <!-- Section -->
+                    <TableRow
+                        android:background="@color/row_color_2"> <!-- Alternate color for row -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Section"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textViewSection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="A" />
+                    </TableRow>
+
+                    <!-- Admission Number -->
+                    <TableRow
+                        android:background="@color/row_color_1"> <!-- Alternate color for row -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Admission Number"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textViewAdmissionNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="123456" />
+                    </TableRow>
+
+                    <!-- Date of Birth -->
+                    <TableRow
+                        android:background="@color/row_color_2"> <!-- Alternate color for row -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date of Birth"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textViewDOB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="01 Jan 2005" />
+                    </TableRow>
+
+                    <!-- Gender -->
+                    <TableRow
+                        android:background="@color/row_color_1"> <!-- Alternate color for row -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gender"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textViewGender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="Male" />
+                    </TableRow>
+
+                    <!-- Blood Group -->
+                    <TableRow
+                        android:background="@color/row_color_2"> <!-- Alternate color for row -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Blood Group"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textViewBloodGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="O+" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Contact Information Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:elevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewContactHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Information"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Parent/Guardian Names -->
+                    <TableRow
+                        android:background="@color/row_color_1"> <!-- Alternate color for row -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Parent/Guardian Names"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textViewParentGuardianNames"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="John Doe" />
+                    </TableRow>
+
+                    <!-- Emergency Contact -->
+                    <TableRow
+                        android:background="@color/row_color_2"> <!-- Alternate color for row -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Emergency Contact"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textViewEmergencyContactNumbers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="123-456-7890" />
+                    </TableRow>
+
+                    <!-- Home Address -->
+                    <TableRow
+                        android:background="@color/row_color_1"> <!-- Alternate color for row -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Home Address"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textViewHomeAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="123 Main St, City" />
+                    </TableRow>
+
+                    <!-- Email Address -->
+                    <TableRow
+                        android:background="@color/row_color_2"> <!-- Alternate color for row -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email Address"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textViewEmailAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="example@example.com" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Extracurricular Activities Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:elevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewExtracurricularHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Extracurricular Activities"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Clubs and Societies -->
+                    <TableRow
+                        android:background="@color/row_color_1"> <!-- Alternate color for row -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Clubs and Societies"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textViewClubsSocieties"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="Science Club" />
+                    </TableRow>
+
+                    <!-- Sports Participation -->
+                    <TableRow
+                        android:background="@color/row_color_2"> <!-- Alternate color for row -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sports Participation"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textViewSportsParticipation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="Football" />
+                    </TableRow>
+
+                    <!-- Achievements and Awards -->
+                    <TableRow
+                        android:background="@color/row_color_1"> <!-- Alternate color for row -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Achievements and Awards"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textViewAchievementsAwards"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="Math Olympiad Winner" />
+                    </TableRow>
+
+                    <!-- School Events -->
+                    <TableRow
+                        android:background="@color/row_color_2"> <!-- Alternate color for row -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="School Events"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textViewSchoolEventsParticipation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="Science Fair" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Financial Information Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:elevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewFinancialHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Financial Information"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Fee Payment History -->
+                    <TableRow
+                        android:background="@color/row_color_1"> <!-- Alternate color for row -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fee Payment History"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textViewFeePaymentHistory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="Paid up to Dec 2024" />
+                    </TableRow>
+
+                    <!-- Outstanding Fees -->
+                    <TableRow
+                        android:background="@color/row_color_2"> <!-- Alternate color for row -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Outstanding Fees"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textViewOutstandingFees"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="None" />
+                    </TableRow>
+
+                    <!-- Scholarship Details -->
+                    <TableRow
+                        android:background="@color/row_color_1"> <!-- Alternate color for row -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Scholarship Details"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textViewScholarshipDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:text="Academic Excellence" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
